@@ -48,6 +48,11 @@
      <Compile Include="Assets\CameraController.cs" />
      <Compile Include="Assets\HoleDetection.cs" />
      <Compile Include="Assets\MovePlayer.cs" />
+     <Compile Include="Assets\rotatemill.cs" />
+     <Compile Include="Assets\rotatemill2.cs" />
+     <Compile Include="Assets\rotatewindmil.cs" />
+     <Compile Include="Assets\stachelball.cs" />
+     <Compile Include="Assets\stachelball2.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>

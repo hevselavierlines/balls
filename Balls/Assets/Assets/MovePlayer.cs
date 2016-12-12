@@ -37,13 +37,14 @@ public class MovePlayer : MonoBehaviour {
 			if (Input.GetKey ("up")) {
 				time++;
 			} else if (Input.GetKeyDown (KeyCode.LeftArrow)) {
-				angle += 0.1f;
-				directionArrow.transform.Rotate(new Vector3(0.0f,0.0f,angle));
+				angle += 0.2f;
+				directionArrow.transform.Rotate(new Vector3(0.0f,0.0f,0.2f));
 			} else if(Input.GetKeyDown(KeyCode.RightArrow)) {
-				angle -= 0.1f;
-				directionArrow.transform.Rotate(new Vector3(0.0f,0.0f,angle));
+				angle -= 0.2f;
+				directionArrow.transform.Rotate(new Vector3(0.0f,0.0f,-0.2f));
 			} else if (Input.GetKeyUp (KeyCode.UpArrow)) {
-				Vector3 movement = new Vector3 (Mathf.Sin(angle) * time * speed, 0.0f, Mathf.Cos(angle) * time * speed);
+				float force = time * speed;
+				Vector3 movement = new Vector3 (Mathf.Sin(-angle / 4) * force, 0.0f, force);
 				rb.AddForce (movement);
 				time = 0;
 				notMoving = 0;
