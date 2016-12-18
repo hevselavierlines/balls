@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/stachelball.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/clubcontrol.cs">
     <Files>
-      <File FileName="Assets/stachelball.cs" Line="13" Column="52" />
-      <File FileName="Assets/MovePlayer.cs" Line="17" Column="25" />
+      <File FileName="Assets/MovePlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets/clubcontrol.cs" Line="41" Column="63" />
+      <File FileName="Assets/stachelball.cs" Line="1" Column="1" />
       <File FileName="Assets/rotatewindmil.cs" Line="1" Column="1" />
       <File FileName="Assets/rotatemill.cs" Line="1" Column="1" />
       <File FileName="Assets/rotatemill2.cs" Line="1" Column="1" />

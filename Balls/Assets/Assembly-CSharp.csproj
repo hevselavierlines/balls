@@ -48,6 +48,7 @@
      <Compile Include="Assets\CameraController.cs" />
      <Compile Include="Assets\HoleDetection.cs" />
      <Compile Include="Assets\MovePlayer.cs" />
+     <Compile Include="Assets\clubcontrol.cs" />
      <Compile Include="Assets\rotatemill.cs" />
      <Compile Include="Assets\rotatemill2.cs" />
      <Compile Include="Assets\rotatewindmil.cs" />
