@@ -38,15 +38,15 @@ public class clubcontrol : MonoBehaviour {
 		//transform.rotation.SetEulerAngles (new Vector3 (45, -receivedTransform [2], receivedTransform [1]));
 		//transform.Rotate (0, 0, 0);
 		//transform.Rotate (-receivedTransform [0], -receivedTransform [2], receivedTransform [1]);
-		transform.eulerAngles = new Vector3(receivedTransform[2], -receivedTransform[1], 0.0f);
+		transform.eulerAngles = new Vector3(40 - receivedTransform[2], 180 - receivedTransform[1], 0.0f);
 		if (textinfo != null) {
 			StringBuilder sb = new StringBuilder ();
 			sb.Append ("(");
-			sb.Append (-receivedTransform [0]);
+			sb.Append (receivedTransform [2]);
 			sb.Append (", ");
-			sb.Append (-receivedTransform [2]);
+			sb.Append (-receivedTransform [1]);
 			sb.Append (", ");
-			sb.Append (receivedTransform [1]);
+			sb.Append (receivedTransform [0]);
 			sb.Append (")");
 			textinfo.text = sb.ToString ();
 		}
