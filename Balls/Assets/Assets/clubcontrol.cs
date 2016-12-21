@@ -50,6 +50,19 @@ public class clubcontrol : MonoBehaviour {
 			sb.Append (")");
 			textinfo.text = sb.ToString ();
 		}
+
+		if (Input.GetKey (KeyCode.UpArrow)) {
+			transform.Rotate (new Vector3 (1, 0, 0));
+		}
+		if (Input.GetKey (KeyCode.DownArrow)) {
+			transform.Rotate (new Vector3 (-1, 0, 0));
+		}
+		if (Input.GetKey (KeyCode.LeftArrow)) {
+			transform.Rotate (new Vector3 (0, -1, 0));
+		}
+		if (Input.GetKey (KeyCode.RightArrow)) {
+			transform.Rotate (new Vector3 (0, 1, 0));
+		}
 	}
 
 	void ReceiveDataBytes() {

@@ -10,7 +10,6 @@ using System.Text;
 public class MovePlayer : MonoBehaviour {
 	private Rigidbody rb;
 	public float speed;
-	public Image directionArrow;
 	private long time;
 	private Vector3 startPos;
 	private int notMoving = -1;
@@ -20,7 +19,6 @@ public class MovePlayer : MonoBehaviour {
 		rb = GetComponent<Rigidbody> ();
 		time = 0;
 		startPos = transform.position;
-		directionArrow.canvasRenderer.SetAlpha (1.0f);
 
 		// debug
 		Debug.Log("Thread started");
@@ -36,7 +34,6 @@ public class MovePlayer : MonoBehaviour {
 			print ("Not moving " + notMoving);
 			if (notMoving > 60) {
 				notMoving = -1;
-				directionArrow.canvasRenderer.SetAlpha (1.0f);
 			}
 		}
 		if (notMoving == -1) {
@@ -46,17 +43,14 @@ public class MovePlayer : MonoBehaviour {
 				time++;
 			} else if (Input.GetKeyDown (KeyCode.LeftArrow)) {
 				angle += 0.2f;
-				directionArrow.transform.Rotate(new Vector3(0.0f,0.0f,0.2f));
 			} else if(Input.GetKeyDown(KeyCode.RightArrow)) {
 				angle -= 0.2f;
-				directionArrow.transform.Rotate(new Vector3(0.0f,0.0f,-0.2f));
 			} else if (Input.GetKeyUp (KeyCode.UpArrow)) {
 				float force = time * speed;
 				Vector3 movement = new Vector3 (Mathf.Sin(-angle / 4) * force, 0.0f, force);
 				rb.AddForce (movement);
 				time = 0;
 				notMoving = 0;
-				directionArrow.canvasRenderer.SetAlpha (0.0f);
 			}
 
 		}
@@ -77,6 +71,5 @@ public class MovePlayer : MonoBehaviour {
 		rb.angularVelocity = Vector3.zero; 
 		time = 0;
 		notMoving = -1;
-		directionArrow.canvasRenderer.SetAlpha (1.0f);
 	}
 }

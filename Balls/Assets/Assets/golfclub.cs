@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
+
 public class golfclub : MonoBehaviour {
 
 	Vector3 anchor;
@@ -19,10 +22,7 @@ public class golfclub : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
-
-
-		if(Input.GetKey(KeyCode.Space)){
+		/*if(Input.GetKey(KeyCode.Space)){
 				transform.Rotate(Vector3.right, Time.deltaTime*rotateCoef);
 		}
 		if(Input.GetKey(KeyCode.B)){
@@ -52,22 +52,26 @@ public class golfclub : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.E)){
 			transform.Rotate(-Vector3.up, Time.deltaTime*rotateCoef);
-		}
+		}*/
 
 	}
 	void OnCollisionEnter(Collision col){
-		print (this.name + "col enter" + col.collider.name);
-	
+		if (col.collider.name == "Player") {
+			Console.WriteLine ("JONAS");
+			print (this.name + "col enter" + col.collider.name);
+		}
+		//Console.Write ("collission enter");
+		//print (this.name + "col enter" + col.collider.name);
 	}
 	void OnCollisionStay(Collision col){
-		if(col.collider.gameObject.name == "Ball"){
+		if(col.collider.gameObject.name == "Player"){
 			foreach(ContactPoint contact in col.contacts){
 				shootDir = transform.position - contact.point;
 				print(contact.thisCollider.name + " hit " + contact.otherCollider.name);
 				Debug.DrawRay(contact.point, contact.normal, Color.white);
 				col.collider.GetComponent<Rigidbody>().AddForce(this.transform.forward * col.relativeVelocity.magnitude * force);
 			}
-}
+		}
 
 	}
 }
