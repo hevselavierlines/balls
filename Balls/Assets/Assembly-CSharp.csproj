@@ -47,10 +47,15 @@
   <ItemGroup>
      <Compile Include="Assets\Ball.cs" />
      <Compile Include="Assets\CameraController.cs" />
+     <Compile Include="Assets\GolfClubColliderControl.cs" />
+     <Compile Include="Assets\GolfClubControl.cs" />
      <Compile Include="Assets\HoleDetection.cs" />
+     <Compile Include="Assets\Magnet.cs" />
+     <Compile Include="Assets\Material.cs" />
      <Compile Include="Assets\MovePlayer.cs" />
-     <Compile Include="Assets\clubcontrol.cs" />
-     <Compile Include="Assets\golfclub.cs" />
+     <Compile Include="Assets\Sand.cs" />
+     <Compile Include="Assets\Wood.cs" />
+     <Compile Include="Assets\forceField.cs" />
      <Compile Include="Assets\ground.cs" />
      <Compile Include="Assets\rotatemill.cs" />
      <Compile Include="Assets\rotatemill2.cs" />

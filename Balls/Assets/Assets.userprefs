@@ -1,15 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/golfclub.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ground.cs">
     <Files>
-      <File FileName="Assets/clubcontrol.cs" Line="64" Column="38" />
-      <File FileName="Assets/MovePlayer.cs" Line="21" Column="33" />
-      <File FileName="Assets/stachelball.cs" Line="1" Column="1" />
-      <File FileName="Assets/rotatewindmil.cs" Line="1" Column="1" />
       <File FileName="Assets/rotatemill.cs" Line="1" Column="1" />
+      <File FileName="Assets/Magnet.cs" Line="1" Column="1" />
+      <File FileName="Assets/GolfClubControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/CameraController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Ball.cs" Line="1" Column="1" />
+      <File FileName="Assets/Wood.cs" Line="1" Column="1" />
+      <File FileName="Assets/Material.cs" Line="1" Column="1" />
+      <File FileName="Assets/GolfClubColliderControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/rotatewindmil.cs" Line="1" Column="1" />
       <File FileName="Assets/rotatemill2.cs" Line="1" Column="1" />
-      <File FileName="Assets/stachelball2.cs" Line="1" Column="1" />
-      <File FileName="Assets/golfclub.cs" Line="13" Column="23" />
+      <File FileName="Assets/ground.cs" Line="19" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

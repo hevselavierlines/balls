@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class ground : MonoBehaviour {
 
+public Material material;
 
-public int bounciness;
+public float Bounciness;
 public float Friction;
 
 	// Use this for initialization
 	void Start () {
-		bounciness = 5;
-		Friction = 0.3f;
+    }
+
+	// Update is called once per frame
+	void Update () {
 	}
 	void OnCollisionEnter(Collision col){
-		col.rigidbody.AddForce (-col.relativeVelocity * bounciness);
+		col.rigidbody.AddForce(-col.relativeVelocity*Bounciness);
 		col.rigidbody.angularDrag = Friction;
 	}
-	void OnCollisionStay(Collision col){
-		col.rigidbody.angularDrag = Friction;
+	void OnCollisionStay(Collision col) {
+		//col.rigidbody.AddForce(-col.relativeVelocity*Bounciness);
+		//col.rigidbody.angularDrag = Friction;	
 	}
 }

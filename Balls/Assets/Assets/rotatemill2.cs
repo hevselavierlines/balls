@@ -10,6 +10,6 @@ public class rotatemill2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(Vector3.up * Time.deltaTime * 40);
+		transform.Rotate(Vector3.up * Time.deltaTime * 50);
 	}
 }
